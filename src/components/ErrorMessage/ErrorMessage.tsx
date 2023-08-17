@@ -11,7 +11,7 @@ const ErrorMessage: FC = () => {
             subTitle="Sorry, the page you visited does not exist."
             extra={
                 <Link
-                    to='/posts'
+                    to='/'
                 >
                     Back to main page
                 </Link>
