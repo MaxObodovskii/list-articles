@@ -1,0 +1,11 @@
+.postId {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.blockWithError {
+  display: flex;
+  justify-content: center;
+}
