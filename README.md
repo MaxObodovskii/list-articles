@@ -1,6 +1,6 @@
 # List of articles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### You can follow the link and see this application [List of articles](https://maxobodovskii.github.io/list-articles/).
 
 ## Technologies used:
 
