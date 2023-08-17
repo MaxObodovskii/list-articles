@@ -70,7 +70,7 @@ const PostIdPage: FC = () => {
                 className={classes.myBtn}
                 type="primary"
                 icon={<LeftOutlined/>}
-                onClick={ () => navigate('/') }
+                onClick={ () => navigate('/posts') }
             >
                 Back
             </Button>

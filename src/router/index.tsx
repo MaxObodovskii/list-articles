@@ -11,24 +11,8 @@ export interface IRoute {
     element: React.ReactNode;
 }
 
-// export enum RouteNames {
-//     POSTS = '/posts',
-//     POST_BY_ID = '/posts/:id',
-//     INCORRECT_PATH_ENTERED = `*`,
-//     BASE = '/',
-//     ERROR = '/error',
-// }
-//
-// export const routes: IRoute[] = [
-//     { path: RouteNames.POSTS, element: <Posts/> },
-//     { path: RouteNames.POST_BY_ID, element: <PostIdPage/> },
-//     { path: RouteNames.INCORRECT_PATH_ENTERED, element: <Navigate to={ RouteNames.ERROR } replace /> },
-//     { path: RouteNames.BASE, element: <Navigate to={ RouteNames.POSTS } replace /> },
-//     { path: RouteNames.ERROR, element: <Error/> },
-// ];
-
 export enum RouteNames {
-    // POSTS = '/posts',
+    POSTS = '/posts',
     POST_BY_ID = '/posts/:id',
     INCORRECT_PATH_ENTERED = `*`,
     BASE = '/',
@@ -36,9 +20,9 @@ export enum RouteNames {
 }
 
 export const routes: IRoute[] = [
-    { path: RouteNames.BASE, element: <Posts/> },
+    { path: RouteNames.POSTS, element: <Posts/> },
     { path: RouteNames.POST_BY_ID, element: <PostIdPage/> },
     { path: RouteNames.INCORRECT_PATH_ENTERED, element: <Navigate to={ RouteNames.ERROR } replace /> },
-    // { path: RouteNames.BASE, element: <Navigate to={ RouteNames.BASE } replace /> },
+    { path: RouteNames.BASE, element: <Navigate to={ RouteNames.POSTS } replace /> },
     { path: RouteNames.ERROR, element: <Error/> },
 ];

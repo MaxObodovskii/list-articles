@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
 
-import { BrowserRouter as Router, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import AppRouter from "./components/AppRouter/AppRouter";
 
 const App: FC = () => {
     return (
-        <HashRouter>
+        <Router>
             <AppRouter/>
-        </HashRouter>
+        </Router>
     );
 };
 
