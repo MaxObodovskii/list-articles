@@ -84,7 +84,8 @@ const PostIdPage: FC = () => {
                         <Card
                             key={p.id}
                             title={p.title}
-                            style={{ maxWidth: 800 }}
+                            style={{ maxWidth: 640 }}
+                            className={classes.postIdItem}
                         >
                             <Text>{p.body}</Text>
                         </Card>
@@ -110,16 +111,21 @@ const PostIdPage: FC = () => {
                     <Spinner/>
                     :
                     <>
-                        {<Title level={2}>{isComment}</Title>}
+                        {
+                            <h2 className={classes.postIdItemTitle}>
+                                {isComment}
+                            </h2>
+                        }
 
                         {comments.map(comm =>
-                        <Card
-                            style={{ maxWidth: 800 }}
-                            key={comm.id}
-                        >
-                            <Title level={3}>{comm.name}</Title>
-                            <Text>{comm.body}</Text>
-                        </Card>
+                            <Card
+                                style={{ maxWidth: 640 }}
+                                className={classes.postIdItem}
+                                key={comm.id}
+                            >
+                                <Title level={3}>{comm.name}</Title>
+                                <Text>{comm.body}</Text>
+                            </Card>
                         )}
                     </>
             }

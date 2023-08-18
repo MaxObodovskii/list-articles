@@ -9,3 +9,26 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 745px) {
+  .postIdItem {
+    width: 380px;
+  }
+
+  .postIdItemTitle {
+    margin: 0;
+    width: 380px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .postIdItem {
+    width: 280px;
+  }
+
+  .postIdItemTitle {
+    font-size: 25px;
+    width: 280px;
+  }
+}

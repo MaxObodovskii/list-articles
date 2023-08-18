@@ -1,0 +1,11 @@
+@media (max-width: 745px) {
+  .postItem {
+    width: 380px;
+  }
+}
+
+@media (max-width: 420px) {
+  .postItem {
+    width: 280px;
+  }
+}

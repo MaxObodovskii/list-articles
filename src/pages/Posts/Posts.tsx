@@ -49,7 +49,7 @@ const Posts: FC = () => {
     }
 
     return (
-        <div>
+        <>
             <Helmet>
                 <meta
                     name="description"
@@ -88,7 +88,7 @@ const Posts: FC = () => {
                         }
                     </>
             }
-        </div>
+        </>
     );
 };
 

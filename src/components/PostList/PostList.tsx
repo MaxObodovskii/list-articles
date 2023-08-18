@@ -19,7 +19,7 @@ const PostList: FC<PostListProps> = ({ posts, title }) => {
 
     return (
         <div className={classes.list}>
-            <Title>
+            <Title level={2}>
                 {title}
             </Title>
 

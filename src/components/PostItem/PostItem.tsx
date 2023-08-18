@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 import { IPost } from "../../types/types";
 
+import classes from "./PostItem.module.css";
+
 import { Button, Card, Typography } from "antd";
 
 const { Text } = Typography;
@@ -19,7 +21,8 @@ const PostItem: FC<PostItemProps> = ({ post }) => {
         <Card
             title={post.title}
             extra={<Button type="link" onClick={ () => navigate(`/posts/${post.id}`)}>More</Button>}
-            style={{ maxWidth: 800 }}
+            style={{ maxWidth: 640 }}
+            className={classes.postItem}
         >
             <Text strong>{post.id}</Text>. {post.body}
         </Card>
